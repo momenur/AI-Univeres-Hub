@@ -28,8 +28,8 @@
 <body>
   <div class="container">
     <div>
-      <h1>AI Universe Hub</h1>
-      <button class="btn btn-danger" onclick="handleSortData()">
+      <h1 class="text-center mt-5">AI Universe Hub</h1>
+      <button class="btn btn-danger mt-3 d-block mx-auto" onclick="handleSortData()">
         Sort By Date
       </button>
     </div>
@@ -46,9 +46,11 @@
     </div>
 
 
-    <button class="btn btn-danger" id="loadMore" onclick="fetchToolsDataAndDisplay(true)">
-      See more
-    </button>
+    <div class="text-center">
+      <button class="btn btn-danger my-4" id="loadMore" onclick="fetchToolsDataAndDisplay(true)">
+        See more
+      </button>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="showSingleTool" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
