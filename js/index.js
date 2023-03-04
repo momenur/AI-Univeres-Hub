@@ -114,20 +114,22 @@ const renderAllCard = (data = []) => {
     innerHTMLData += `
     <div class="col">
         <div class="card h-100">
-          <img src=${item.image} class="card-img-top" alt="...">
+          <img style="height: 200px;" src=${item.image} class="card-img-top" alt="...">
           <div class="card-body">
             <h6 class="card-title">Features</h6>
             <ol style="padding-left: 16px; font-size: small; color: dimgray;">
             ${innerFeatures(item.features)}
             </ol>
-            <div>
-              <h6 class="card-title">${item.name}</h6>
+            <h3 class="card-title">${item.name}</h3>
+            <div class="d-flex justify-content-between">
+              
               <p class="card-title">${item.published_in}</p>
+              <div>
+               <button data-bs-toggle="modal" onClick="showToolModal(${item.id})" data-bs-target="#showSingleTool"> <i class="fa       fa-hand-o-right" aria-hidden="true"></i>
+              </button>
+             </div>
             <div>
-           <div>
-            <button data-bs-toggle="modal" onClick="showToolModal(${item.id})" data-bs-target="#showSingleTool"> <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-            </button>
-          </div>
+           
           </div>
         </div>
       </div>
