@@ -52,7 +52,7 @@ const renderModalData = (item) => {
               <div class="col-sm-6">
                 <div class="card h-100">
                   <img src=${item.image}
-                    class="card-img-top" alt="..." style="height: 250px;">
+                    class="card-img-top" alt="..." >
                   <div align="center">
                     <h6 class="card-title">Can you give any example?</h6>
                     <p>No! Not yet! Take a break</p>
@@ -145,8 +145,3 @@ document.addEventListener("DOMContentLoaded", function () {
   fetchToolsDataAndDisplay();
 })
 
-
-const handleSortData = () => {
-  allData = allData.sort((itemOne, itemTwo) => new Date(itemOne.published_in) - new Date(itemTwo.published_in));
-  fetchToolsDataAndDisplay(isLoadAllData)
-}
