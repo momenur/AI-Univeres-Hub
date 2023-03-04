@@ -26,6 +26,7 @@ const innerModalFeatures = (features) => {
 
   return innerHTML
 }
+//  Prise Funtionlalitys 
 
 const pricingFeature = (pricing) => {
   let innerHTML = ''
@@ -43,7 +44,7 @@ const pricingFeature = (pricing) => {
   })
   return innerHTML
 }
-
+//  modal Show data
 const renderModalData = (item) => {
   console.log({ item })
   const cardsContainer = document.getElementById('modalBody')
