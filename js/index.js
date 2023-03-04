@@ -26,7 +26,7 @@ const innerModalFeatures = (features) => {
 
   return innerHTML
 }
-//  Prise Funtionlalitys 
+//  Prise Function and feature
 
 const pricingFeature = (pricing) => {
   let innerHTML = ''
